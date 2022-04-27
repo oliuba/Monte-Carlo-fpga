@@ -41,7 +41,7 @@ begin
     if (reset)
         random <= 'd1;
     else if (enable)
-        random <= {random[OUT_WIDTH - 1 : 0], random[2] ^ random[OUT_WIDTH - 1]};
+        random <= {random[OUT_WIDTH - 2 : 0], random[2] ^ random[OUT_WIDTH - 1]};
 end
 
 always_comb rnd <= random;
