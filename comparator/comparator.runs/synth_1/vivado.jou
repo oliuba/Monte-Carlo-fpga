@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Apr 27 21:08:32 2022
+# Process ID: 9450
+# Current directory: /home/olha/study/year2_2/acs/fpga/comparator/comparator.runs/synth_1
+# Command line: vivado -log comparator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comparator.tcl
+# Log file: /home/olha/study/year2_2/acs/fpga/comparator/comparator.runs/synth_1/comparator.vds
+# Journal file: /home/olha/study/year2_2/acs/fpga/comparator/comparator.runs/synth_1/vivado.jou
+# Running On: olha-ZenBook-UX434IQ-UM433IQ, OS: Linux, CPU Frequency: 1400.000 MHz, CPU Physical cores: 8, Host memory: 16165 MB
+#-----------------------------------------------------------
+source comparator.tcl -notrace

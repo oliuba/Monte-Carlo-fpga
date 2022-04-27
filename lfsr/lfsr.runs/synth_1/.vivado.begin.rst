@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="olha" Host="olha-ZenBook-UX434IQ-UM433IQ" Pid="18215" HostCore="8" HostMemory="15786500">
+    </Process>
+</ProcessHandle>
