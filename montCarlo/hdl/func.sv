@@ -25,9 +25,9 @@ module func #(
     parameter int a = 2, // only non-negative
     parameter int b = 3 // only non-negative
 )(
-    input logic[WIDTH] x,
-    input logic[WIDTH] y,
-    output logic[WIDTH + a + b] t
+    input logic[WIDTH-1:0] x,
+    input logic[WIDTH-1:0] y,
+    output logic[WIDTH + a + b:0] t
     );
     
 always_comb t <= a*x + b*y;

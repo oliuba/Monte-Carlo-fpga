@@ -42,14 +42,14 @@ logic iter_comp_res;
 
 logic [WIDTH-1:0] x_rand;
 logic [WIDTH-1:0] y_rand;
-logic [2*WIDTH:0] t_rand;
+logic [WIDTH+a+b:0] t_rand;
 
 logic [WIDTH-1:0] x_rand_program;
 logic [WIDTH-1:0] y_rand_program;
-logic [2*WIDTH:0] t_rand_program;
+logic [WIDTH+a+b:0] t_rand_program;
 
-logic [2*WIDTH:0] t_calculated;
-logic [2*WIDTH:0] t_calculated_program;
+logic [WIDTH+a+b:0] t_calculated;
+logic [WIDTH+a+b:0] t_calculated_program;
 
 logic funcs_comp_res;
 
