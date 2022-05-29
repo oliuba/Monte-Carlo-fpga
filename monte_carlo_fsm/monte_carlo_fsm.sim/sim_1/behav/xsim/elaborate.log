@@ -6,18 +6,18 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'a' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:96]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'b' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:97]
-WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 33 for port 't' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:100]
-WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 16 for port 'a' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:107]
-WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 16 for port 'b' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:108]
+WARNING: [VRFC 10-3091] actual bit length 20 differs from formal bit length 33 for port 't' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:100]
+WARNING: [VRFC 10-3091] actual bit length 20 differs from formal bit length 19 for port 'a' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:107]
+WARNING: [VRFC 10-3091] actual bit length 20 differs from formal bit length 19 for port 'b' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:108]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.lfsr(OUT_WIDTH=16)
-Compiling module xil_defaultlib.lfsr(OUT_WIDTH=17)
+Compiling module xil_defaultlib.lfsr(OUT_WIDTH=20)
 Compiling module xil_defaultlib.func(WIDTH=16)
-Compiling module xil_defaultlib.comparator(INPUT_WIDTH=16)
-Compiling module xil_defaultlib.fsm_montecarlo(WIDTH=16)
+Compiling module xil_defaultlib.comparator(INPUT_WIDTH=19)
+Compiling module xil_defaultlib.fsm_montecarlo(WIDTH=16,a=3,b=4)
 Compiling module xil_defaultlib.monte_carlo_sim
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot monte_carlo_sim_behav

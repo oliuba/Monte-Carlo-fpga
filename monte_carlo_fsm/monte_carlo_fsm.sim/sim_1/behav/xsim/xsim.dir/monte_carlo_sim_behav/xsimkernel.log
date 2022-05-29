@@ -1,4 +1,4 @@
-Running: xsim.dir/monte_carlo_sim_behav/xsimk -simmode gui -wdb monte_carlo_sim_behav.wdb -simrunnum 0 -socket 43493
+Running: xsim.dir/monte_carlo_sim_behav/xsimk -simmode gui -wdb monte_carlo_sim_behav.wdb -simrunnum 0 -socket 57093
 Design successfully loaded
 Design Loading Memory Usage: 31684 KB (Peak: 31804 KB)
-Design Loading CPU Usage: 20 ms
+Design Loading CPU Usage: 30 ms
