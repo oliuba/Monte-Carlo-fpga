@@ -2,7 +2,7 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/olha/study/year2_2/acs/
 INFO: [VRFC 10-311] analyzing module comparator
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fsm_montecarlo
-INFO: [VRFC 10-2458] undeclared symbol funcs_comp_res, assumed default net type wire [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:107]
+INFO: [VRFC 10-2458] undeclared symbol funcs_comp_res, assumed default net type wire [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:109]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/func.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module func
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/lfsr.sv" into library xil_defaultlib

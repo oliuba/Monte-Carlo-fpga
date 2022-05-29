@@ -20,7 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module fsm_montecarlo #(
-        parameter int WIDTH = 4
+        parameter int WIDTH = 4,
+        parameter int a = 1,
+        parameter int b = 1
     ) (
         input logic rst,
         input logic [WIDTH-1:0] num_of_iterations,
@@ -32,10 +34,10 @@ module fsm_montecarlo #(
         input logic clk,
         input logic [WIDTH-1:0] seed_1,
         input logic [WIDTH-1:0] seed_2,
-        input logic [WIDTH:0] seed_3,
+        input logic [WIDTH+a+b-2:0] seed_3,
         
-        input logic [WIDTH-1:0] a,
-        input logic [WIDTH-1:0] b,
+//        input logic [WIDTH-1:0] a,
+//        input logic [WIDTH-1:0] b,
 
         output logic [WIDTH-1:0] result
 
@@ -47,9 +49,9 @@ module fsm_montecarlo #(
 
     logic [WIDTH-1:0] x_rand = '0;
     logic [WIDTH-1:0] y_rand = '0;
-    logic [WIDTH:0] t_rand = '0;
+    logic [WIDTH+a+b-2:0] t_rand = '0;
 
-    logic [WIDTH:0] t_calculated = '0;
+    logic [WIDTH+a+b-2:0] t_calculated = '0;
     
     logic enable_func = '0;
     logic enable_rand = '0;
@@ -77,7 +79,7 @@ module fsm_montecarlo #(
          );
 
     lfsr #(
-             .OUT_WIDTH(1+WIDTH)
+             .OUT_WIDTH(WIDTH+a+b-1)
          ) rng_t (
              .clk(clk),
              .enable(enable_rand),
@@ -99,7 +101,7 @@ module fsm_montecarlo #(
          );
 
     comparator #(
-                 .INPUT_WIDTH(WIDTH+1)
+                 .INPUT_WIDTH(WIDTH+a+b-2)
                ) comparator_funcs (
                    .clk(clk),
                    .a(t_calculated),
