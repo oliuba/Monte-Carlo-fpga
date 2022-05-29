@@ -16,8 +16,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// Inspired by: https://simplefpga.blogspot.com/2013/02/random-number-generator-in-verilog-fpga.html
-//              https://www.youtube.com/watch?v=ZIoTmcKPl4w
+// Taps taken from: https://www.eetimes.com/tutorial-linear-feedback-shift-registers-lfsrs-part-1/
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -47,13 +46,33 @@ begin
 end
 
 always_comb begin
-    if (OUT_WIDTH == 8)
+    if (OUT_WIDTH == 5 || OUT_WIDTH == 11 || OUT_WIDTH == 21 || OUT_WIDTH == 29)     
+        tap <= random[1] ^ random[OUT_WIDTH - 1];                                         
+    if (OUT_WIDTH == 8)                                                  
         tap <= random[1] ^ random[2] ^ random[3] ^ random[OUT_WIDTH - 1];
-    else if (OUT_WIDTH == 10 || OUT_WIDTH == 20)
+    else if (OUT_WIDTH == 9)                     
+        tap <= random[3] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 10 || OUT_WIDTH == 20 || OUT_WIDTH == 17 || OUT_WIDTH == 25 || OUT_WIDTH == 28 || OUT_WIDTH == 31)
         tap <= random[2] ^ random[OUT_WIDTH - 1];
-    else if (OUT_WIDTH == 11)
-        tap <= random[1] ^ random[OUT_WIDTH - 1];
-    else if (OUT_WIDTH == 4)
+    else if (OUT_WIDTH == 12 || OUT_WIDTH == 30)
+        tap <= random[0] ^ random[3] ^ random[5] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 13 || OUT_WIDTH == 24)
+        tap <= random[0] ^ random[2] ^ random[3] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 14)                                            
+        tap <= random[0] ^ random[2] ^ random[4] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 16)
+        tap <= random[1] ^ random[2] ^ random[4] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 18)
+        tap <= random[6] ^ random[OUT_WIDTH - 1];                     
+    else if (OUT_WIDTH == 19 || OUT_WIDTH == 27)                                            
+        tap <= random[0] ^ random[1] ^ random[4] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 23)
+        tap <= random[4] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 26)                                            
+        tap <= random[0] ^ random[1] ^ random[5] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 32)                                            
+        tap <= random[1] ^ random[5] ^ random[6] ^ random[OUT_WIDTH - 1];
+    else if (OUT_WIDTH == 2 || OUT_WIDTH == 3 || OUT_WIDTH == 4 || OUT_WIDTH == 6 || OUT_WIDTH == 7 || OUT_WIDTH == 15 || OUT_WIDTH == 22)
         tap <= random[0] ^ random[OUT_WIDTH - 1];
 
 end

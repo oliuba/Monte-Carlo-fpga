@@ -55,7 +55,7 @@ always #(`CLK_PERIOD/2) clk <= ~clk;
   
 initial begin
       
-    @(posedge clk) num_of_iterations <= 10000;
+    @(posedge clk) num_of_iterations <= 1000;
     
     @(posedge clk) seed_1 <= 20;
     @(posedge clk) seed_2 <= 10;
