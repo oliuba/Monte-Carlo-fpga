@@ -20,7 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 `define CLK_PERIOD          (10ns)
-`define WIDTH               (10)
+`define WIDTH               (16)
+`define a                   (3)
+`define b                   (4)
 
 module monte_carlo_sim;
     logic rst = '0;
@@ -28,15 +30,14 @@ module monte_carlo_sim;
     logic clk = '0;
     logic [`WIDTH-1:0] seed_1 = '0;
     logic [`WIDTH-1:0] seed_2 = '0;
-    logic [`WIDTH:0] seed_3 = '0;
-        
-    logic [`WIDTH-1:0] a = '0;
-    logic [`WIDTH-1:0] b = '0;
+    logic [`WIDTH+`b-1:0] seed_3 = '0;
 
     logic [`WIDTH-1:0] result = '1;
     
 fsm_montecarlo #(
-    .WIDTH(`WIDTH)
+    .WIDTH(`WIDTH),
+    .a(`a),
+    .b(`b)
 ) monte_carlo_inst (
     .rst(rst),
     .num_of_iterations(num_of_iterations),
@@ -45,8 +46,6 @@ fsm_montecarlo #(
     .seed_2(seed_2),
     .seed_3(seed_3),
 
-    .a(a),
-    .b(b),
     .result(result)
  );
 
@@ -55,13 +54,11 @@ always #(`CLK_PERIOD/2) clk <= ~clk;
   
 initial begin
       
-    @(posedge clk) num_of_iterations <= 1000;
+    @(posedge clk) num_of_iterations <= 10000;
     
     @(posedge clk) seed_1 <= 20;
     @(posedge clk) seed_2 <= 10;
     @(posedge clk) seed_3 <= 5;
-    @(posedge clk) a <= 1;
-    @(posedge clk) b <= 1;
 
     @(posedge clk) rst <= '1;
     @(posedge clk) rst <= '0;
