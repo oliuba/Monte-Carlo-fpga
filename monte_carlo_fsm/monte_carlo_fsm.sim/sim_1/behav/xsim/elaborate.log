@@ -1,0 +1,19 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/olha/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot monte_carlo_sim_behav xil_defaultlib.monte_carlo_sim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 21 for port 't' [/home/olha/study/year2_2/acs/fpga/monte_carlo_fsm/monte_carlo_fsm.srcs/sources_1/new/fsm.sv:98]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lfsr(OUT_WIDTH=10)
+Compiling module xil_defaultlib.lfsr(OUT_WIDTH=11)
+Compiling module xil_defaultlib.func
+Compiling module xil_defaultlib.comparator(INPUT_WIDTH=11)
+Compiling module xil_defaultlib.fsm_montecarlo(WIDTH=10)
+Compiling module xil_defaultlib.monte_carlo_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot monte_carlo_sim_behav
