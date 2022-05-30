@@ -59,6 +59,8 @@ can produce relatively complex logics with simple building blocks.
   <img src="https://github.com/oliuba/Monte-Carlo-fpga/blob/main/images/fsm.png" alt="Finite state machine"/>
 </p>
 
+Directory [simulation](https://github.com/oliuba/Monte-Carlo-fpga/tree/main/simulation) contains file ``
+
 ## Usage
 
 ## Authors
