@@ -59,9 +59,11 @@ can produce relatively complex logics with simple building blocks.
   <img src="https://github.com/oliuba/Monte-Carlo-fpga/blob/main/images/fsm.png" alt="Finite state machine"/>
 </p>
 
-Directory [simulation](https://github.com/oliuba/Monte-Carlo-fpga/tree/main/simulation) contains file ``
+Directory [simulation](https://github.com/oliuba/Monte-Carlo-fpga/tree/main/simulation) contains file `monte_carlo_sim.sv` 
 
 ## Usage
+
+You can run simultion in Vivado, or create bitstream for your FPGA
 
 ## Authors
 
@@ -69,4 +71,4 @@ Directory [simulation](https://github.com/oliuba/Monte-Carlo-fpga/tree/main/simu
 
 [Hanna Yershova](https://github.com/hannusia)
 
-@ UCU, 2022
+© UCU, 2022
