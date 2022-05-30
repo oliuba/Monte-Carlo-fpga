@@ -22,6 +22,10 @@ In particaler, to find a definite integral of function `f(x, y)` we have to:
     2. Generate N triplets of points (x_i, y_i, t_i) that are uniformly randomly chosen from the limits of integration
     3. Calculate function in all (x_i, y_i) and determine now many points are under the graph
     4. Estimate the result of integration
+    
+ <p align="center">
+  <img src="https://github.com/oliuba/Monte-Carlo-fpga/blob/main/images/plot.png" alt="Example function"/>
+</p>
 
 A **field-programmable gate array (FPGA)** is an integrated circuit designed to be configured by a customer or a designer after manufacturing – hence the term field-programmable. The FPGA configuration is generally specified using a hardware description language (HDL), similar to that used for an application-specific integrated circuit (ASIC). Circuit diagrams were previously used to specify the configuration, but this is increasingly rare due to the advent of electronic design automation tools.
 
@@ -51,6 +55,9 @@ can produce relatively complex logics with simple building blocks.
 
 `fsm.sv` —  main module that implements logic of the program, is based on a **Finite State Mashine** that is desribed with the following state diagram:
 
+<p align="center">
+  <img src="https://github.com/oliuba/Monte-Carlo-fpga/blob/main/images/fsm.png" alt="Finite state machine"/>
+</p>
 
 ## Usage
 
